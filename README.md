@@ -10,16 +10,16 @@ O principal objetivo deste dataset é fornecer um recurso abrangente e de fácil
 Conteúdo do Dataset
 Este repositório inclui:
 
-Avaliações de Acessibilidade: Relatórios detalhados que cobrem diferentes aspectos da acessibilidade, como navegação por teclado, compatibilidade com leitores de tela, uso de cores, e muito mais.
-Metodologia: Descrição das metodologias utilizadas para conduzir as avaliações, incluindo ferramentas e critérios de avaliação.
-Resultados Agregados: Análises estatísticas e gráficos que fornecem uma visão geral do status de acessibilidade das aplicações avaliadas.
-Documentação: Guias e tutoriais sobre como utilizar o dataset para suas próprias pesquisas e projetos.
+- Avaliações de Acessibilidade: Relatórios detalhados que cobrem diferentes aspectos da acessibilidade, como navegação por teclado, compatibilidade com leitores de tela, uso de cores, e muito mais.
+- Metodologia: Descrição das metodologias utilizadas para conduzir as avaliações, incluindo ferramentas e critérios de avaliação.
+- Resultados Agregados: Análises estatísticas e gráficos que fornecem uma visão geral do status de acessibilidade das aplicações avaliadas.
+- Documentação: Guias e tutoriais sobre como utilizar o dataset para suas próprias pesquisas e projetos.
 Estudos Incluídos
 O dataset abrange uma variedade de estudos, incluindo:
 
-Análises Comparativas: Comparações entre diferentes aplicações para identificar quais apresentam melhores práticas de acessibilidade.
-Estudos Longitudinais: Acompanhamento da evolução da acessibilidade em aplicações específicas ao longo do tempo.
-Estudos de Caso: Exemplos detalhados de aplicações que servem como modelos de boas práticas ou que apresentam desafios significativos de acessibilidade.
+- Análises Comparativas: Comparações entre diferentes aplicações para identificar quais apresentam melhores práticas de acessibilidade.
+- Estudos Longitudinais: Acompanhamento da evolução da acessibilidade em aplicações específicas ao longo do tempo.
+- Estudos de Caso: Exemplos detalhados de aplicações que servem como modelos de boas práticas ou que apresentam desafios significativos de acessibilidade.
 Como Contribuir
 Contribuições são bem-vindas! Se você tiver dados adicionais, correções ou melhorias para o dataset, sinta-se à vontade para enviar um pull request ou abrir uma issue.
 
