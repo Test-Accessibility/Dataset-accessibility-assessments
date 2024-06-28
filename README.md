@@ -1,4 +1,4 @@
-# Dataset-avaliacoes-acessibilidade
+# Dataset de avaliações de acessibilidade
 
 <h2>Introdução</h2>
 Bem-vindo ao repositório do GitHub para o Dataset de Avaliações de Acessibilidade. Este repositório foi criado para facilitar estudos sobre o status de acessibilidade de diversas aplicações, com o objetivo de promover a inclusão digital e garantir que todos os usuários, independentemente de suas habilidades, possam acessar e utilizar tecnologias de forma eficaz.
