@@ -17,9 +17,8 @@ Este repositório inclui:
 <h3>Estudos Incluídos</h3>
 O dataset abrange uma variedade de estudos, incluindo:
 
-- Análises Comparativas: Comparações entre diferentes aplicações para identificar quais apresentam melhores práticas de acessibilidade.
-- Estudos Longitudinais: Acompanhamento da evolução da acessibilidade em aplicações específicas ao longo do tempo.
-- Estudos de Caso: Exemplos detalhados de aplicações que servem como modelos de boas práticas ou que apresentam desafios significativos de acessibilidade.
+- Estudo 1: Avaliação automatica de acessibilidade em 150 aplicativos cross-platforms.
+- Estudo 2: Avaliação manual de acessibilidade em aplicativos populares Android.
 
 <h3>Agradecimentos</h3>
 Agradecemos a todos os contribuidores e parceiros que tornaram este dataset possível. Juntos, podemos criar um ambiente digital mais inclusivo para todos.
