@@ -2,25 +2,27 @@
 
 This repo contains the data and code for our webmedia 2024 accessibility literature survey paper entitled *["Investigating the accessibility of popular mobile Android apps: a prevalence, category, and language study"](https://)* by [Matheus Gomes](https://), [Daniel Mesquista](https://), [Ribamar Souza](https://). Note: we have a follow-up paper focused primarily on large-scale bibliometric analysis. You can find the repo for that other work [here](https://).
 
-Please cite this dataset as:
+## Introduction (talvez... nao sei se precisa de titulo para essa parte)
+Objective of this research is to analyze the current level of accessibility of popular applications in the Android ecosystem across various categories, including apps dealing with music and videos. Furthermore, another goal is to evaluate them in different languages, such as Portuguese, English, and Spanish.
 
-> Kelly Mack, Emma McDonnell, Dhruv Jain, Lucy Lu Wang, Jon E. Froehlich, and Leah Findlater. 2021. What Do We Mean by “Accessibility Research”? A Literature Survey of Accessibility Papers in CHI and ASSETS from 1994 to 2019. Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems. Association for Computing Machinery, New York, NY, USA, Article 371, 1–18. DOI:https://doi.org/10.1145/3411764.3445412
+### Study Objects
+To select the first ten apps to be evaluated, we chose to use a list of apps from another research project unrelated to our own. This allowed us to start by analyzing popular apps without a selection bias from our research group. Additionally, the apps belong to five distinct categories. Table shows the apps evaluated during the study, their category, and their number of downloads on the Play Store, which range from 50 million to 10 billion.
+
+|    **Application**   |   **Category**  | **Downloads** |
+|:--------------------:|:---------------:|:-------------:|
+|         ESPN         |       News      |     50 mi     |
+| The Weather Channel  |       News      |     100 mi    |
+|       Linkedin       |   Social Media  |      1 bi     |
+|       Pinterest      |   Social Media  |      1 bi     |
+|      SoundCloud      | Audio Streaming |     100 mi    |
+|        Spotify       | Audio Streaming |      1 bi     |
+|        Twitch        | Video Streaming |     100 mi    |
+|        YouTube       | Video Streaming |     10 bi     |
+|        Shopee        |   E-Commerce    |     100 mi    |
+|        Copang        |   E-Commerce    |     50 mi     |
 
 
+### Materials and Methods
+We used the Accessibility Scanner tool to evaluate the apps. This Google tool assesses app interfaces during manual navigation and identifies accessibility issues. Designed for developers and designers, it offers improvement suggestions and generates detailed reports, identifying issues with contrast, font sizes, and button labels. The definitions of the identified accessibility errors are available on the tool's [website](https://support.google.com/accessibility/android/faq/6376582?hl=pt-BR). For instance, Figure [figura](colocar_figura_na_web_dps) highlights the accessibility errors detected with the help of the Accessibility Scanner. The tool identified visually the contrast errors and touch area size issues on the SoundCloud app's home screen.
 
-## Analyses and Datasets
-The Mack paper presents analyses of two accessibility paper datasets drawn from CHI and ASSETS:
-
-1. **Study 1**: A qualitative analysis of accessibility papers from 2010-2019 (N=506 papers).
-2. **Study 2**: A larger programmatic analysis of the last 26-years of accessibility papers—since the founding of ASSETS (N=836 papers)
-
-### Study 1
-To analyze the 506 accessibility papers from 2010-2019 at CHI and ASSETS, we used an iterative process to develop and apply a codebook. See Sections 3.1.1 and 3.2.1 and Sections 4.1, 4.2, and 4.3 of the Mack et al. paper.
-
-- **[Dataset1_QualitativeCodebook.docx](/datasets/Dataset1_QualitativeCodebook.docx)**: The codebook includes deductive codes based on our research questions, such as user communities of focus, technologies, and study methods as well as codes that were inductively added as we pursue our analysis. See Section 3.2.1 in the CHI'21 paper for details.
-
-- **[Dataset1_QualitativelyCodedData_ASSETSandCHI_2010-2019.csv](/datasets/Dataset1_QualitativelyCodedData_ASSETSandCHI_2010-2019.csv)**: The results of our qualitative analysis using the above codebook
-
-- **[Dataset1_TotalPaperCountsPerYear_ASSETSandCHI_2010-2019.csv](/datasets/Dataset1_TotalPaperCountsPerYear_ASSETSandCHI_2010-2019.csv)**: The total number of papers at ASSETS and CHI from 2010-2019.
-
-- **[Study1_QualitativeAnalysis.ipynb](/src/Study1_QualitativeAnalysis.ipynb)**: The analysis scripts for Study 1. You can open up this notebook live in your browser using [binder](https://mybinder.org/v2/gh/makeabilitylab/accessibility-literature-survey/HEAD) or run it locally using Jupyter Notebook and Anaconda. See [src/README.md](/src).
+During the app analysis process, two evaluators, each with a different Android device, executed the evaluation protocol. One used a Galaxy S22 Ultra and the other a Galaxy A03. Table \ref{tab:materiais_qp2} identifies the smartphone used for the evaluated apps and their Android versions.
