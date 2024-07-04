@@ -31,6 +31,6 @@ During the app analysis process, two evaluators, each with a different Android d
 We defined a list of activities to be performed according to the app category to ensure navigation consistent with the proper use of the app. The two evaluators changed the smartphones' language settings before executing the activities. The evaluation protocol was then repeated. The same evaluator checked accessibility across different language executions using the Accessibility Scanner. This tool evaluated all interactions through screen captures, enabling the identification of accessibility errors in multiple languages during navigation.
 
 ### Results
-The results can be found in [dataset](https://support.google.com/accessibility/android/faq/6376582?hl=pt-BR) in this repo.
+The results can be found in [dataset](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/blob/main/Estudo%2002/10_popular_apps_dataset.csv) in this repo.
 
 We had some issues with two apps. The Coupang app only had the Korean language available, making it impossible to change the language according to the device's region settings. The Shopee app did not allow changing the language to English or Spanish. The Coupang app was exclude from the result analysis, and we only checked the Portuguese version of the Shopee app.
