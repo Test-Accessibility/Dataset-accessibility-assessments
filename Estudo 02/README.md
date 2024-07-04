@@ -1,6 +1,6 @@
 # Investigating the accessibility of popular mobile Android apps: a prevalence, category, and language study
 
-This repo contains the data and code for our webmedia 2024 accessibility literature survey paper entitled *["Investigating the accessibility of popular mobile Android apps: a prevalence, category, and language study"](https://)* by [Matheus Gomes](https://), [Daniel Mesquista](https://), [Ribamar Souza](https://) and [Windson Viana](https://). Note: we have a follow-up paper focused primarily on large-scale bibliometric analysis. You can find the repo for that other work [here](https://).
+This repo contains the data for our WebMedia 2024 accessibility research paper entitled *["Investigating the accessibility of popular mobile Android apps: a prevalence, category, and language study"](https://)* by [Matheus Gomes](https://), [Daniel Mesquista](https://), [Ribamar Souza](https://) and [Windson Viana](https://). Note: we have a follow-up paper focused primarily on large-scale bibliometric analysis. You can find the repo for that other work [here](https://).
 
 ## Introduction
 The objective of this research is to analyze the current level of accessibility of popular applications in the Android ecosystem across various categories, including apps dealing with music and videos. Furthermore, another goal is to evaluate them in different languages, such as Portuguese, English, and Spanish.
