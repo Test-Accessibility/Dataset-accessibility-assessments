@@ -27,6 +27,10 @@ We used the [Accessibility Scanner](https://support.google.com/accessibility/and
 
 During the app analysis process, two evaluators, each with a different Android device, executed the evaluation protocol. One used a Galaxy S22 Ultra and the other a Galaxy A03.
 
+<div align="center">
+<img src="https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/assets/174071237/017fed25-d8c4-4047-99c1-f1f8b9bf7254" width="700px" />
+</div>
+
 ### Procedure
 We defined a list of activities to be performed according to the app category to ensure navigation consistent with the proper use of the app. The two evaluators changed the smartphones' language settings before executing the activities. The evaluation protocol was then repeated. The same evaluator checked accessibility across different language executions using the Accessibility Scanner. This tool evaluated all interactions through screen captures, enabling the identification of accessibility errors in multiple languages during navigation.
 
