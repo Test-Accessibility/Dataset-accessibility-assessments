@@ -27,7 +27,7 @@ We used the [Accessibility Scanner](https://support.google.com/accessibility/and
 
 During the app analysis process, two evaluators, each with a different Android device, executed the evaluation protocol. One used a Galaxy S22 Ultra and the other a Galaxy A03.
 
-<div align="center">
+<div align="left">
 <img src="https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/assets/174071237/017fed25-d8c4-4047-99c1-f1f8b9bf7254" width="700px" />
 </div>
 
