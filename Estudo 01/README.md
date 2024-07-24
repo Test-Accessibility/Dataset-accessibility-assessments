@@ -11,7 +11,7 @@ To select the first applications to be evaluated, we chose to use an application
 In the end, 198 apps were selected for testing and all of those chosen were multiplatform, with only Ionic, React Native and Flutter. In addition, entries from different categories were selected.
 
 ### Materials and Methods
-The tool used for testing was [Firebase Test Lab](https://firebase.google.com/docs/test-lab) which is a mobile application testing platform developed by Google as part of the Firebase toolset . It allows developers to run automated tests on their Android and iOS apps on a wide range of real and virtual devices hosted on Google's infrastructure.
+The tool used for testing was [Firebase Test Lab](https://firebase.google.com/docs/test-lab) which is a mobile application testing platform developed by Google as part of the Firebase toolset. It allows developers to run automated tests on their Android and iOS apps on a wide range of real and virtual devices hosted on Google's infrastructure.
 
 The image bellow.. (colocar uma imagem do erros que firebase encontrou, tem algum print?)
 
@@ -21,7 +21,7 @@ The applications were divided between five people, and everyone configured the s
 Some parameters were established during the error count, to define which applications would have their tests disregarded, the parameters included whether the application had gotten stuck on the login screen, whether it made fatal errors that prevented the test from being executed, or whether it did not go through. more than 5 screens. Therefore, the results of 72 applications were disregarded because they did not meet established requirements. Furthermore, tests in Portuguese were also disregarded, as only 36 applications supported the language.
 
 ### Results
-The results were separated into two datasets, given the large number of apps that were disregarded. The [raw_dataset](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessabilidade/blob/main/Estudo%2001/massive_apps_raw_dataset.csv) contains all the results found, including the disregarded tests. The [dataset](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessabilidade/blob/main/Estudo%2001/massive_apps_dataset.csv) only contains the results of the tests that were considered for this research. Both datasets are present in this repo.
+The results were separated into two datasets, given the large number of apps that were disregarded. The [raw_dataset](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/blob/main/Estudo%2001/massive_apps_raw_dataset.csv) contains all the results found, including the disregarded tests. The [dataset](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/blob/main/Estudo%2001/massive_apps_dataset.csv) only contains the results of the tests that were considered for this research. Both datasets are present in this repo.
 
 As a result of this research, 126 mobile applications were evaluated with *2713* total accessibility errors, with an average of *0.5* errors per screen. The table below shows more information about the tests.
 
