@@ -23,7 +23,7 @@ Some parameters were established during the error count, to define which applica
 ### Results
 The results were separated into two datasets, given the large number of apps that were disregarded. The [raw_dataset](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/blob/main/Estudo%2001/massive_apps_raw_dataset.csv) contains all the results found, including the disregarded tests. The [dataset](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/blob/main/Estudo%2001/massive_apps_dataset.csv) only contains the results of the tests that were considered for this research. Both datasets are present in this repo.
 
-As a result of this research, 126 mobile applications were evaluated with *2713* total accessibility errors, with an average of *0.5* errors per screen. The table below shows more information about the tests.
+As a result of this research, 126 mobile applications were evaluated only in English with **2713** total accessibility errors, with an average of **0.5** errors per screen. The table below shows more information about the tests.
 
 |                                            | **React Native** | **Ionic** | **Flutter** | **Total** |
 |--------------------------------------------|------------------|-----------|-------------|-----------|
