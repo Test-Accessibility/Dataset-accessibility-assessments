@@ -1,6 +1,6 @@
 # Avaliando a acessibilidade de aplicação móveis: a plataforma de desenvolvimento da língua de execucão importam? // Assessing the accessibility of mobile applications: does the platform development and execution language matter?
 
-This repo contains the data for our research entitled *["Avaliando a acessibilidade de aplicação móveis: a plataforma de desenvolvimento da língua de execucão importam?"](https://)* by [Matheus Gomes](https://), [Daniel Mesquista](https://), [Isaac Santos](https://), [Paulo Henrique](https://), [Ribamar Souza](https://) and [Windson Viana](https://).
+This repo contains the data for our research entitled *["Avaliando a acessibilidade de aplicação móveis: a plataforma de desenvolvimento da língua de execucão importam?"](https://)* by [Matheus Gomes](https://), [Daniel Mesquista](https://), [Isaac Santos](https://), [Paulo Henrique](https://), [Ribamar Souza](https://) and [Windson Viana](https://). Note: we have a follow-up article mainly focused on the accessibility analysis of 10 popular Play Store apps. You can find the repo for that other work [here](https://github.com/Test-Accessibility/Dataset-avaliacoes-acessibilidade/tree/main/Estudo%2002).
 
 ## Introduction
 The objective of this research is to explore and analyze the current state of cross-platform app accessibility across multiple categories, including education and lifestyle apps. Furthermore, another goal is to evaluate them in different languages, such as Portuguese and English.
