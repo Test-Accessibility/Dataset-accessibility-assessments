@@ -15,7 +15,8 @@ The tool used for testing was [Firebase Test Lab](https://firebase.google.com/do
 
 The image bellow.. (colocar uma imagem do erros que firebase encontrou, tem algum print?)
 <div align="left">
-<img src="https://github.com/user-attachments/assets/5e4b1627-1078-48c1-86b4-2d730408c206" width="700px" />
+<img src="https://github.com/user-attachments/assets/5e4b1627-1078-48c1-86b4-2d730408c206" width="400px" />
+<img src="https://github.com/user-attachments/assets/5e4b1627-1078-48c1-86b4-2d730408c206" width="400px" />
 </div>
 
 
