@@ -14,6 +14,10 @@ In the end, 198 apps were selected for testing and all of those chosen were mult
 The tool used for testing was [Firebase Test Lab](https://firebase.google.com/docs/test-lab) which is a mobile application testing platform developed by Google as part of the Firebase toolset. It allows developers to run automated tests on their Android and iOS apps on a wide range of real and virtual devices hosted on Google's infrastructure.
 
 The image bellow.. (colocar uma imagem do erros que firebase encontrou, tem algum print?)
+<div align="left">
+<img src="https://github.com/user-attachments/assets/5e4b1627-1078-48c1-86b4-2d730408c206" width="700px" />
+</div>
+
 
 ### Procedure
 The applications were divided between five people, and everyone configured the same information in Firebase to ensure test consistency. For both languages, we configured Firebase Test Lab to run the mobile apps for five minutes using the same virtual device, Pixel 5.
