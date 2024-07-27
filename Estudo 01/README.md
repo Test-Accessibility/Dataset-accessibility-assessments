@@ -14,7 +14,7 @@ In the end, 198 apps were selected for testing and all of those chosen were mult
 The tool used for testing was [Firebase Test Lab](https://firebase.google.com/docs/test-lab) which is a mobile application testing platform developed by Google as part of the Firebase toolset. It allows developers to run automated tests on their Android and iOS apps on a wide range of real and virtual devices hosted on Google's infrastructure.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/5e4b1627-1078-48c1-86b4-2d730408c206" width="500px" style="border-radius:100%"/>
+<img src="https://github.com/user-attachments/assets/5e4b1627-1078-48c1-86b4-2d730408c206" width="500px" />
 <img src="https://github.com/user-attachments/assets/618653ba-c86a-42f4-86a5-333e9015bad1" width="500px" />
 Accessibility errors (text contrast and touch target) detected by Firebase
 </div>
