@@ -1,4 +1,4 @@
-Apps,Platform,Category,# Actions,# Activities,# Screens,Content Labeling,Implementation,Touch target size,Low contrast,Unnecessary text,Not readable,Items have the same description,Items share same location,Text Scaling,APK Name,Idioma
+Apps,Platform,Category,# Actions,# Activities,# Screens,Content Labeling,Implementation,Touch target size,Low contrast,Unnecessary text,Not readable,Items have the same description,Items share same location,Text Scaling,APK Name,Language
 Kings of Israel,Ionic,BOOKS_AND_REFERENCE,13,1,9,0,0,0,0,false,false,false,false,false,1A3EBF19B708C909DE994C43E4704B0A68270FED7A5E31659ECB4629C12805E7,ptbr
 Confectionery,Ionic,BOOKS_AND_REFERENCE,62,1,22,0,0,0,0,false,false,false,false,false,2D638BDF1EEE4A560C52A65CD7B0CF17B75E9A5821301609B19609355990F4B1,ptbr
 Programming languages,Ionic,BOOKS_AND_REFERENCE,39,2,22,0,0,0,0,false,false,false,false,false,0DF407D8FA1789EACA18BF03AD361007236665FBCA5E70DD275336F14EA7122E,ptbr
