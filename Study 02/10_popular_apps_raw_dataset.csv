@@ -1,6 +1,7 @@
 Apps,Web App,Category,# Tasks,# Screens,Touch_Target ,Contrast,Item_Description,Text_Size,Hidden_Text,Item_Label,Clickable_Item,Language
 Sound Clound,soundclound.com,Audio streaming,4,7,3,18,9,9,4,5,0,ptbr
 Spotify,spotify.com,Audio streaming,4,12,29,11,0,39,12,3,2,ptbr
+Copang,coupang.com,E-Commerce,null,null,null,null,null,null,null,null,null,ptbr
 Shopee,shopee.tw,E-Commerce,5,9,125,146,6,34,18,76,0,ptbr
 ESPN,espn.com,News,3,8,96,29,0,26,6,3,1,ptbr
 The Weather Channel,weather.com,News,2,4,43,25,2,27,12,29,0,ptbr
@@ -10,6 +11,8 @@ Twitch,twitch.tv,Video streaming,3,4,23,4,2,13,2,8,0,ptbr
 YouTube,youtube.com,Video streaming,4,5,18,3,5,16,8,5,0,ptbr
 Sound Clound,soundclound.com,Audio streaming,4,7,3,14,8,9,3,2,0,ing
 Spotify,spotify.com,Audio streaming,4,12,53,31,0,40,17,3,0,ing
+Copang,coupang.com,E-Commerce,null,null,null,null,null,null,null,null,null,ing
+Shopee,shopee.tw,E-Commerce,null,null,null,null,null,null,null,null,null,ing
 ESPN,espn.com,News,3,8,115,22,7,54,2,1,0,ing
 The Weather Channel,weather.com,News,2,4,41,17,1,30,8,26,0,ing
 Linkedin,linkedin.com,Social Media,3,5,26,14,5,7,2,0,0,ing
@@ -18,6 +21,8 @@ Twitch,twitch.tv,Video streaming,3,4,28,7,3,16,1,6,0,ing
 YouTube,youtube.com,Video streaming,4,5,11,2,5,26,3,3,0,ing
 Sound Clound,soundclound.com,Audio streaming,4,7,3,19,8,9,3,2,0,esp
 Spotify,spotify.com,Audio streaming,4,12,55,53,0,40,17,3,0,esp
+Copang,coupang.com,E-Commerce,null,null,null,null,null,null,null,null,null,esp
+Shopee,shopee.tw,E-Commerce,null,null,null,null,null,null,null,null,null,esp
 ESPN,espn.com,News,3,8,107,19,2,36,8,2,0,esp
 The Weather Channel,weather.com,News,2,4,27,43,0,26,12,27,0,esp
 Linkedin,linkedin.com,Social Media,3,5,30,8,7,7,2,0,0,esp
