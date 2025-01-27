@@ -1,0 +1,1 @@
+Nesse prompt não foram enconrados erros de acessibilidade.
