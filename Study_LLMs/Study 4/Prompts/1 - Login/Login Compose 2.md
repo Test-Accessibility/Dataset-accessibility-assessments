@@ -1,9 +1,11 @@
-danielmfr: Contexto: Sou desenvolvedor Android mobile.
+### *MobileDev:* 
+Contexto: Sou desenvolvedor Android mobile.
 Necessidade Geral: Me ajude a desenvolver uma tela de login para uma aplicação móvel Android nativa.
 Elementos de Design da tela: Certifique-se de incluir campos para o nome de usuário/e-mail e senha, juntamente com botões para 'Entrar' e 'Esqueceu a senha'. Deve seguir os padrões do Material Design.
 Restrições: Indique todos os arquivos necessários para compilar o código e use o Compose do Jetpack. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Aqui está um exemplo de como você pode criar uma tela de login usando Jetpack Compose em um arquivo Kotlin:
+### *GitHub Copilot:*
+Aqui está um exemplo de como você pode criar uma tela de login usando Jetpack Compose em um arquivo Kotlin:
 
 ```kotlin
 import android.os.Bundle
@@ -110,9 +112,11 @@ Este código cria uma tela de login simples usando Jetpack Compose, seguindo os 
 
 Similar code found with 1 license type
 
-danielmfr: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:* 
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas:
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas:
 
 1. **Adicionar descrições de conteúdo para ícones**: Os ícones de visibilidade da senha devem ter descrições de conteúdo para que leitores de tela possam identificar sua função.
 
