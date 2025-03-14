@@ -1,9 +1,11 @@
-danielmfr: Contexto: Sou desenvolvedor Android mobile.
+### *MobileDev:* 
+Contexto: Sou desenvolvedor Android mobile.
 Necessidade Geral: Me ajude a desenvolver uma tela de login para uma aplicação móvel Android nativa.
 Elementos de Design da tela: Certifique-se de incluir campos para o nome de usuário/e-mail e senha, juntamente com botões para 'Entrar' e 'Esqueceu a senha'. Deve seguir os padrões do Material Design.
 Restrições: Indique todos os arquivos necessários para compilar o código e use o Compose do Jetpack. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Claro! Aqui está um exemplo de uma tela de login para uma aplicação móvel Android nativa usando Jetpack Compose. Vou incluir todos os elementos necessários em um único arquivo Kotlin.
+### *GitHub Copilot:* 
+Claro! Aqui está um exemplo de uma tela de login para uma aplicação móvel Android nativa usando Jetpack Compose. Vou incluir todos os elementos necessários em um único arquivo Kotlin.
 
 ```kotlin
 package com.example.loginscreen
@@ -124,9 +126,11 @@ Este código cria uma tela de login simples usando Jetpack Compose. Ele inclui c
 
 Similar code found with 1 license type
 
-danielmfr: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:* 
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela de login sugerida. Aqui estão algumas melhorias que podem ser feitas:
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela de login sugerida. Aqui estão algumas melhorias que podem ser feitas:
 
 1. **Adicionar rótulos acessíveis aos campos de texto**: Use `TextField` em vez de `BasicTextField` para aproveitar os rótulos e dicas de acessibilidade integrados.
 2. **Adicionar descrições de conteúdo para os botões**: Use `contentDescription` para descrever a ação dos botões.
