@@ -1,9 +1,11 @@
-Ribas5: Contexto: Sou desenvolvedor Android mobile.
+### *MobileDev:* 
+Contexto: Sou desenvolvedor Android mobile.
 Necessidade Geral: Me ajude a desenvolver uma tela com uma lista de tarefas para uma aplicação móvel Android nativa.
 Elementos de Design da tela: Certifique-se de incluir, pelo menos, três itens na lista e em cada item deve possuir uma checkbox, uma tarefa e uma data. A lista deve ser organizada de acordo com as datas em ordem decrescente. Deve seguir os padrões do Material Design. Gere os textos necessários.
 Restrições: Utilize Jetpack Compose e indique todos os arquivos necessários para compilar o código. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Aqui está um exemplo de como você pode criar uma tela com uma lista de tarefas usando Jetpack Compose para uma aplicação Android nativa. O código inclui uma lista de tarefas com checkbox, tarefa e data, organizada em ordem decrescente de datas, seguindo os padrões do Material Design.
+### *GitHub Copilot:*
+Aqui está um exemplo de como você pode criar uma tela com uma lista de tarefas usando Jetpack Compose para uma aplicação Android nativa. O código inclui uma lista de tarefas com checkbox, tarefa e data, organizada em ordem decrescente de datas, seguindo os padrões do Material Design.
 
 ```kotlin
 package com.example.todolist
@@ -90,9 +92,11 @@ Este código cria uma tela com uma lista de tarefas usando Jetpack Compose. Cada
 
 Similar code found with 1 license type
 
-Ribas5: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:* 
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas para garantir que a tela seja mais acessível:
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas para garantir que a tela seja mais acessível:
 
 1. **Adicionar descrições de conteúdo para elementos interativos**: Adicionar descrições de conteúdo para a checkbox para que leitores de tela possam identificar o propósito do elemento.
 
