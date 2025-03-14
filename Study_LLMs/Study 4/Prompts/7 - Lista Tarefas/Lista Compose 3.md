@@ -1,6 +1,8 @@
-Ribas5: Contexto: Sou desenvolvedor Android mobile. Necessidade Geral: Me ajude a desenvolver uma tela com uma lista de tarefas para uma aplicação móvel Android nativa. Elementos de Design da tela: Certifique-se de incluir, pelo menos, três itens na lista e em cada item deve possuir uma checkbox, uma tarefa e uma data. A lista deve ser organizada de acordo com as datas em ordem decrescente. Deve seguir os padrões do Material Design. Gere os textos necessários. Restrições: Utilize Jetpack Compose e indique todos os arquivos necessários para compilar o código. Gere apenas um arquivo ".kt" contendo todo o código necessário.
+### *MobileDev:* 
+Contexto: Sou desenvolvedor Android mobile. Necessidade Geral: Me ajude a desenvolver uma tela com uma lista de tarefas para uma aplicação móvel Android nativa. Elementos de Design da tela: Certifique-se de incluir, pelo menos, três itens na lista e em cada item deve possuir uma checkbox, uma tarefa e uma data. A lista deve ser organizada de acordo com as datas em ordem decrescente. Deve seguir os padrões do Material Design. Gere os textos necessários. Restrições: Utilize Jetpack Compose e indique todos os arquivos necessários para compilar o código. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Claro! Vou te ajudar a criar uma tela com uma lista de tarefas utilizando Jetpack Compose. Abaixo está o código completo em um único arquivo `.kt` que você pode usar para compilar a aplicação.
+### *GitHub Copilot:*
+Claro! Vou te ajudar a criar uma tela com uma lista de tarefas utilizando Jetpack Compose. Abaixo está o código completo em um único arquivo `.kt` que você pode usar para compilar a aplicação.
 
 ```kotlin
 package com.example.todolist
@@ -106,9 +108,11 @@ Certifique-se de ter o tema `ToDoListTheme` configurado no seu projeto. Se ainda
 
 Similar code found with 1 license type
 
-Ribas5: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:* 
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas para garantir que a tela esteja acessível:
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas para garantir que a tela esteja acessível:
 
 1. **Adicionar conteúdo descritivo para a checkbox**: As checkboxes devem ter um conteúdo descritivo para que os leitores de tela possam identificar o que cada checkbox representa.
 
