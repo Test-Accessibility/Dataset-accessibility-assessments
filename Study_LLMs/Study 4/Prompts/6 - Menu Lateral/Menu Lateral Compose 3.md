@@ -1,6 +1,13 @@
-Ribas5: Contexto: Sou desenvolvedor Android mobile. Necessidade Geral: Me ajude a desenvolver um menu lateral retrátil para uma aplicação móvel Android nativa. Elementos de Design da tela: Certifique-se de incluir duas seções. Uma com os itens de navegação “Página Inicial”, “Promoções”, “Meus Pedidos” e “Meu Carrinho”. E a outra com os itens “Minha Conta” e “Sair”. O menu deve possuir uma divisão e deve seguir os padrões do Material Design. Restrições: Utilize Jetpack Compose e indique todos os arquivos necessários para compilar o código. Gere os textos necessários para os elementos. Restrições: Indique todos os arquivos necessários para compilar o código e use Jetpack Compose. Gere apenas um arquivo ".kt" contendo todo o código necessário.
+### *MobileDev:*
+Contexto: Sou desenvolvedor Android mobile.
+Necessidade Geral: Me ajude a desenvolver um menu lateral retrátil para uma aplicação móvel Android nativa.
+Elementos de Design da tela: Certifique-se de incluir duas seções. Uma com os itens de navegação “Página Inicial”, “Promoções”, “Meus Pedidos” e “Meu Carrinho”. E a outra com os itens “Minha Conta” e “Sair”. O menu deve possuir uma divisão e deve seguir os padrões do Material Design 3.
+Restrições: Utilize Jetpack Compose e indique todos os arquivos necessários para compilar o código. Gere os textos necessários para os elementos. Restrições: Indique todos os arquivos necessários para compilar o código e use Jetpack Compose. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Para criar um menu lateral retrátil (Drawer) em uma aplicação Android nativa utilizando Jetpack Compose, você pode seguir o exemplo abaixo. Este exemplo inclui todas as seções e itens de navegação solicitados, seguindo os padrões do Material Design.
+### *GitHub Copilot:*
+Para criar um menu lateral retrátil (Drawer) em uma aplicação Android nativa usando Jetpack Compose, você pode seguir o exemplo abaixo. Este exemplo inclui todas as seções e itens de navegação solicitados, seguindo os padrões do Material Design 3.
+
+Crie um arquivo chamado `MainActivity.kt` e adicione o seguinte código:
 
 ```kotlin
 package com.example.drawerexample
@@ -9,14 +16,14 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.drawerexample.ui.theme.DrawerExampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,70 +39,65 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp() {
-    val scaffoldState = rememberScaffoldState()
+    val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
+    val items = listOf(
+        DrawerItem("Página Inicial", Icons.Default.Home),
+        DrawerItem("Promoções", Icons.Default.LocalOffer),
+        DrawerItem("Meus Pedidos", Icons.Default.List),
+        DrawerItem("Meu Carrinho", Icons.Default.ShoppingCart),
+        DrawerItem("Minha Conta", Icons.Default.AccountCircle),
+        DrawerItem("Sair", Icons.Default.ExitToApp)
+    )
 
-    Scaffold(
-        scaffoldState = scaffoldState,
-        topBar = {
-            TopAppBar(
-                title = { Text("Meu App") },
-                navigationIcon = {
-                    IconButton(onClick = {
-                        scope.launch {
-                            scaffoldState.drawerState.open()
+    ModalNavigationDrawer(
+        drawerState = drawerState,
+        drawerContent = {
+            ModalDrawerSheet {
+                Column {
+                    items.subList(0, 4).forEach { item ->
+                        NavigationDrawerItem(
+                            label = { Text(item.title) },
+                            icon = { Icon(item.icon, contentDescription = null) },
+                            selected = false,
+                            onClick = { /* Handle navigation */ }
+                        )
+                    }
+                    Divider(modifier = Modifier.padding(vertical = 8.dp))
+                    items.subList(4, 6).forEach { item ->
+                        NavigationDrawerItem(
+                            label = { Text(item.title) },
+                            icon = { Icon(item.icon, contentDescription = null) },
+                            selected = false,
+                            onClick = { /* Handle navigation */ }
+                        )
+                    }
+                }
+            }
+        },
+        content = {
+            Scaffold(
+                topBar = {
+                    TopAppBar(
+                        title = { Text("Drawer Example") },
+                        navigationIcon = {
+                            IconButton(onClick = { scope.launch { drawerState.open() } }) {
+                                Icon(Icons.Default.Menu, contentDescription = null)
+                            }
                         }
-                    }) {
-                        Icon(Icons.Filled.Menu, contentDescription = "Menu")
+                    )
+                },
+                content = { paddingValues ->
+                    Box(modifier = Modifier.padding(paddingValues)) {
+                        Text("Content goes here")
                     }
                 }
             )
-        },
-        drawerContent = {
-            DrawerContent()
         }
-    ) {
-        // Main content of the screen
-        Box(modifier = Modifier.fillMaxSize()) {
-            Text("Conteúdo Principal", modifier = Modifier.padding(16.dp))
-        }
-    }
-}
-
-@Composable
-fun DrawerContent() {
-    Column {
-        DrawerSection(title = "Navegação")
-        DrawerItem("Página Inicial")
-        DrawerItem("Promoções")
-        DrawerItem("Meus Pedidos")
-        DrawerItem("Meu Carrinho")
-        Divider(modifier = Modifier.padding(vertical = 8.dp))
-        DrawerSection(title = "Configurações")
-        DrawerItem("Minha Conta")
-        DrawerItem("Sair")
-    }
-}
-
-@Composable
-fun DrawerSection(title: String) {
-    Text(
-        text = title,
-        style = MaterialTheme.typography.subtitle1,
-        modifier = Modifier.padding(16.dp)
     )
 }
 
-@Composable
-fun DrawerItem(text: String) {
-    Text(
-        text = text,
-        style = MaterialTheme.typography.body1,
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp)
-    )
-}
+data class DrawerItem(val title: String, val icon: ImageVector)
 
 @Preview(showBackground = true)
 @Composable
@@ -106,39 +108,32 @@ fun DefaultPreview() {
 }
 ```
 
-Este código cria uma aplicação Android com um menu lateral retrátil utilizando Jetpack Compose. O menu contém duas seções, conforme solicitado, e segue os padrões do Material Design.
+Este código cria uma aplicação Android com um menu lateral retrátil usando Jetpack Compose. O menu contém duas seções, conforme solicitado, e segue os padrões do Material Design 3. Certifique-se de ter as dependências necessárias no seu arquivo `build.gradle`:
 
-### Arquivos Necessários
-1. **MainActivity.kt**: Contém todo o código necessário para a implementação do menu lateral retrátil.
-2. **Theme Files**: Certifique-se de ter os arquivos de tema padrão gerados pelo Android Studio para um projeto Compose, como `Theme.kt`, `Color.kt`, `Shape.kt`, e `Type.kt`.
-
-### Dependências
-Certifique-se de adicionar as dependências necessárias no seu arquivo `build.gradle`:
-
-```groovy
+```gradle
 dependencies {
-    implementation "androidx.compose.ui:ui:1.0.5"
-    implementation "androidx.compose.material:material:1.0.5"
+    implementation "androidx.compose.material3:material3:1.0.0"
+    implementation "androidx.activity:activity-compose:1.4.0"
     implementation "androidx.compose.ui:ui-tooling-preview:1.0.5"
-    implementation "androidx.activity:activity-compose:1.3.1"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+    implementation "androidx.compose.ui:ui-tooling:1.0.5"
 }
 ```
 
-Com isso, você terá um menu lateral retrátil funcional em sua aplicação Android nativa utilizando Jetpack Compose.
+Isso deve ser suficiente para compilar e executar o código.
 
 Similar code found with 2 license types
 
-Ribas5: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:*
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade no código sugerido. Aqui estão algumas melhorias que podem ser feitas para garantir que a tela seja mais acessível:
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir possíveis erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas para garantir uma melhor acessibilidade:
+1. **Adicionar descrições de conteúdo para ícones**: Os ícones devem ter descrições de conteúdo (`contentDescription`) para que leitores de tela possam descrever o ícone para usuários com deficiência visual.
 
-1. **Adicionar descrições de conteúdo para ícones**: O ícone do menu deve ter uma descrição de conteúdo para que leitores de tela possam identificar sua função.
-2. **Adicionar suporte para navegação por teclado**: Certifique-se de que os itens do menu possam ser navegados usando o teclado.
-3. **Contraste de cores**: Verifique se o contraste de cores entre o texto e o fundo é suficiente para garantir a legibilidade.
+2. **Adicionar suporte para navegação por teclado**: Certifique-se de que os itens de navegação possam ser acessados e ativados usando o teclado.
 
-Aqui está o código atualizado com melhorias de acessibilidade:
+Aqui está o código atualizado com essas melhorias:
 
 ```kotlin
 package com.example.drawerexample
@@ -147,20 +142,14 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.unit.sp
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.drawerexample.ui.theme.DrawerExampleTheme
 import kotlinx.coroutines.launch
 
@@ -177,77 +166,65 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp() {
-    val scaffoldState = rememberScaffoldState()
+    val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
+    val items = listOf(
+        DrawerItem("Página Inicial", Icons.Default.Home, "Ir para a página inicial"),
+        DrawerItem("Promoções", Icons.Default.LocalOffer, "Ver promoções"),
+        DrawerItem("Meus Pedidos", Icons.Default.List, "Ver meus pedidos"),
+        DrawerItem("Meu Carrinho", Icons.Default.ShoppingCart, "Ver meu carrinho"),
+        DrawerItem("Minha Conta", Icons.Default.AccountCircle, "Ver minha conta"),
+        DrawerItem("Sair", Icons.Default.ExitToApp, "Sair da conta")
+    )
 
-    Scaffold(
-        scaffoldState = scaffoldState,
-        topBar = {
-            TopAppBar(
-                title = { Text("Meu App") },
-                navigationIcon = {
-                    IconButton(
-                        onClick = {
-                            scope.launch {
-                                scaffoldState.drawerState.open()
+    ModalNavigationDrawer(
+        drawerState = drawerState,
+        drawerContent = {
+            ModalDrawerSheet {
+                Column {
+                    items.subList(0, 4).forEach { item ->
+                        NavigationDrawerItem(
+                            label = { Text(item.title) },
+                            icon = { Icon(item.icon, contentDescription = item.contentDescription) },
+                            selected = false,
+                            onClick = { /* Handle navigation */ }
+                        )
+                    }
+                    Divider(modifier = Modifier.padding(vertical = 8.dp))
+                    items.subList(4, 6).forEach { item ->
+                        NavigationDrawerItem(
+                            label = { Text(item.title) },
+                            icon = { Icon(item.icon, contentDescription = item.contentDescription) },
+                            selected = false,
+                            onClick = { /* Handle navigation */ }
+                        )
+                    }
+                }
+            }
+        },
+        content = {
+            Scaffold(
+                topBar = {
+                    TopAppBar(
+                        title = { Text("Drawer Example") },
+                        navigationIcon = {
+                            IconButton(onClick = { scope.launch { drawerState.open() } }) {
+                                Icon(Icons.Default.Menu, contentDescription = "Abrir menu de navegação")
                             }
-                        },
-                        modifier = Modifier.semantics { contentDescription = "Menu" }
-                    ) {
-                        Icon(Icons.Filled.Menu, contentDescription = null)
+                        }
+                    )
+                },
+                content = { paddingValues ->
+                    Box(modifier = Modifier.padding(paddingValues)) {
+                        Text("Content goes here")
                     }
                 }
             )
-        },
-        drawerContent = {
-            DrawerContent()
         }
-    ) {
-        // Main content of the screen
-        Box(modifier = Modifier.fillMaxSize()) {
-            Text("Conteúdo Principal", modifier = Modifier.padding(16.dp))
-        }
-    }
-}
-
-@Composable
-fun DrawerContent() {
-    Column {
-        DrawerSection(title = "Navegação")
-        DrawerItem("Página Inicial")
-        DrawerItem("Promoções")
-        DrawerItem("Meus Pedidos")
-        DrawerItem("Meu Carrinho")
-        Divider(modifier = Modifier.padding(vertical = 8.dp))
-        DrawerSection(title = "Configurações")
-        DrawerItem("Minha Conta")
-        DrawerItem("Sair")
-    }
-}
-
-@Composable
-fun DrawerSection(title: String) {
-    Text(
-        text = title,
-        style = MaterialTheme.typography.subtitle1.copy(fontWeight = FontWeight.Bold),
-        modifier = Modifier.padding(16.dp)
     )
 }
 
-@Composable
-fun DrawerItem(text: String) {
-    Text(
-        text = text,
-        style = MaterialTheme.typography.body1.copy(fontSize = 18.sp),
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp)
-            .semantics { contentDescription = text },
-        textAlign = TextAlign.Start,
-        maxLines = 1,
-        overflow = TextOverflow.Ellipsis
-    )
-}
+data class DrawerItem(val title: String, val icon: ImageVector, val contentDescription: String)
 
 @Preview(showBackground = true)
 @Composable
@@ -258,11 +235,10 @@ fun DefaultPreview() {
 }
 ```
 
-### Melhorias de Acessibilidade Implementadas
-1. **Descrição de Conteúdo para Ícones**: Adicionei a propriedade `semantics` ao `IconButton` para fornecer uma descrição de conteúdo.
-2. **Contraste de Cores e Legibilidade**: Aumentei o tamanho da fonte dos itens do menu para melhorar a legibilidade.
-3. **Navegação por Teclado**: A propriedade `semantics` também ajuda na navegação por teclado, tornando os itens do menu mais acessíveis.
+### Melhorias de Acessibilidade Implementadas:
+1. **Descrições de Conteúdo**: Adicionei descrições de conteúdo (`contentDescription`) para todos os ícones, incluindo o ícone do menu de navegação.
+2. **Suporte para Leitores de Tela**: As descrições de conteúdo ajudam os leitores de tela a descreverem os ícones para usuários com deficiência visual.
 
-Essas melhorias devem ajudar a garantir que a interface seja mais acessível para todos os usuários.
+Essas melhorias devem ajudar a tornar a aplicação mais acessível.
 
-Similar code found with 3 license types
+Similar code found with 2 license types
