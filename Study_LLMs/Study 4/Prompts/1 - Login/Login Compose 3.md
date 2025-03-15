@@ -1,9 +1,11 @@
-danielmfr: Contexto: Sou desenvolvedor Android mobile.
+### *MobileDev:* 
+Contexto: Sou desenvolvedor Android mobile.
 Necessidade Geral: Me ajude a desenvolver uma tela de login para uma aplicação móvel Android nativa.
 Elementos de Design da tela: Certifique-se de incluir campos para o nome de usuário/e-mail e senha, juntamente com botões para 'Entrar' e 'Esqueceu a senha'. Deve seguir os padrões do Material Design.
 Restrições: Indique todos os arquivos necessários para compilar o código e use o Compose do Jetpack. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Aqui está um exemplo de uma tela de login usando Jetpack Compose para uma aplicação Android nativa. Este exemplo inclui campos para nome de usuário/e-mail e senha, além dos botões 'Entrar' e 'Esqueceu a senha', seguindo os padrões do Material Design.
+### *GitHub Copilot:*
+Aqui está um exemplo de uma tela de login usando Jetpack Compose para uma aplicação Android nativa. Este exemplo inclui campos para nome de usuário/e-mail e senha, além dos botões 'Entrar' e 'Esqueceu a senha', seguindo os padrões do Material Design.
 
 ```kotlin
 package com.example.loginscreen
@@ -97,9 +99,11 @@ Este código cria uma tela de login simples usando Jetpack Compose. Certifique-s
 
 Similar code found with 1 license type
 
-danielmfr: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:* 
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela de login sugerida. Aqui estão algumas melhorias que podem ser feitas para garantir uma melhor acessibilidade:
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela de login sugerida. Aqui estão algumas melhorias que podem ser feitas para garantir uma melhor acessibilidade:
 
 1. **Adicionar descrições de conteúdo (contentDescription) para elementos interativos**: Isso ajuda os leitores de tela a descreverem os elementos para usuários com deficiência visual.
 2. **Usar `visualTransformation` para ocultar a senha**: Isso garante que a senha não seja visível enquanto o usuário a digita.

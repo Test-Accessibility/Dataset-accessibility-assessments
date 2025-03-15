@@ -1,9 +1,11 @@
-danielmfr: Contexto: Sou desenvolvedor Android mobile.
+### *MobileDev:* 
+Contexto: Sou desenvolvedor Android mobile.
 Necessidade Geral: Me ajude a desenvolver uma tela de formulário de cadastro para uma aplicação móvel Android nativa.
 Elementos de Design da tela: Certifique-se de incluir campos como nome, sobrenome, endereço de e-mail, senha, data de nascimento e gênero. Além disso, inclua botões para 'Enviar' e 'Cancelar'. Deve seguir os padrões do Material Design.
 Restrições: Indique todos os arquivos necessários para compilar o código e use o Compose Jetpack. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Aqui está um exemplo de um arquivo Kotlin que cria uma tela de formulário de cadastro usando Jetpack Compose, seguindo os padrões do Material Design:
+### *GitHub Copilot:*
+Aqui está um exemplo de um arquivo Kotlin que cria uma tela de formulário de cadastro usando Jetpack Compose, seguindo os padrões do Material Design:
 
 ```kotlin
 package com.example.registrationform
@@ -121,9 +123,11 @@ Este código cria uma tela de formulário de cadastro com campos para nome, sobr
 
 Similar code found with 1 license type
 
-danielmfr: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:* 
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas:
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas:
 
 1. **Adicionar descrições de conteúdo para leitores de tela**: Use o atributo `contentDescription` para fornecer descrições de conteúdo para leitores de tela.
 2. **Usar campos de senha adequados**: Use `visualTransformation` para mascarar a senha.

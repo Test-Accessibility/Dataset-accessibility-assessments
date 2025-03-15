@@ -1,9 +1,11 @@
-danielmfr: Contexto: Sou desenvolvedor Android mobile.
+### *MobileDev:* 
+Contexto: Sou desenvolvedor Android mobile.
 Necessidade Geral: Me ajude a desenvolver uma tela de detalhes do produto para uma aplicação móvel Android nativa.
 Elementos de Design da tela: Esta tela deve exibir informações detalhadas sobre um produto específico, incluindo seu nome, descrição, preço e imagem. Além disso, inclua elementos interativos, como botões para adicionar ao carrinho ou favoritos. Deve seguir os padrões do Material Design. Gere os textos para cada elemento.
 Restrições: Indique todos os arquivos necessários para compilar o código e use Compose Jetpack. Gere apenas um arquivo ".kt" contendo todo o código necessário.
 
-GitHub Copilot: Aqui está um exemplo de como você pode criar uma tela de detalhes do produto usando Jetpack Compose em um arquivo Kotlin:
+### *GitHub Copilot:*
+Aqui está um exemplo de como você pode criar uma tela de detalhes do produto usando Jetpack Compose em um arquivo Kotlin:
 
 ```kotlin
 import android.os.Bundle
@@ -110,9 +112,11 @@ Este código cria uma tela de detalhes do produto que exibe o nome, descrição,
 
 Similar code found with 4 license types
 
-danielmfr: Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
+### *MobileDev:* 
+Nessa tela sugerida foram encontrados erros de acessibilidade. Você é capaz de identificá-los?
 
-GitHub Copilot: Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas:
+### *GitHub Copilot:*
+Sim, posso ajudar a identificar e corrigir os erros de acessibilidade na tela sugerida. Aqui estão algumas melhorias que podem ser feitas:
 
 1. **Adicionar descrições de conteúdo para a imagem**: A imagem do produto deve ter uma descrição de conteúdo para que leitores de tela possam descrever a imagem.
 
