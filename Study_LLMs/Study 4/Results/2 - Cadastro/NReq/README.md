@@ -1,0 +1,1 @@
+Nesse tipo de tela não foram enconrados erros de acessibilidade.
