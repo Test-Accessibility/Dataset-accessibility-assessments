@@ -18,6 +18,18 @@ Digital accessibility is about making apps and digital content usable by everyon
 
 In mobile development, accessibility means designing interfaces that are easy to perceive, understand, and interact with, regardless of a user’s visual, auditory, cognitive, or motor abilities.
 
+### Common Accessibility Mistakes to Watch For
+
+When generating code with LLMs, here are the most common accessibility violations to look out for:
+
+- **Low text contrast**: Ensure sufficient contrast between text and background.
+- **Missing content descriptions**: All interactive elements (buttons, switches, images) need meaningful `contentDescription`.
+- **Unlabeled items**: Avoid using empty `Text("")` or decorative icons without context.
+- **Small touch targets**: Ensure buttons and icons have a minimum touch target of 48x48dp.
+- **Incorrect semantic roles**: Use `.semantics { }` properly to expose meaningful information to assistive technologies.
+
+Use tools like Android's Accessibility Scanner to detect these and revise your prompts accordingly.
+
 ### 📘 Learn More
 
 - [W3C Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
@@ -70,7 +82,7 @@ The way you write your prompt can affect the quality of the response. This guide
 
 A zero-shot prompt gives the model only an instruction, with no examples or context.
 
-*Prompt Example*
+*Example Prompt*
 ```text
 You are an Android developer with expertise in Jetpack Compose and accessibility.
 
@@ -95,7 +107,7 @@ Please generate a complete and functional Composable function for this screen th
 
 A one-shot prompt provides a single example before asking the model to complete a similar task. This helps the model understand the desired structure or tone.
 
-*Prompt Example*
+*Example Prompt*
 ```text
 You are an Android developer with expertise in Jetpack Compose and accessibility.
 
@@ -146,7 +158,7 @@ fun AccessibleSettingsScreen() {
 
 Few-shot prompting provides multiple examples before the main request. This gives the model clearer guidance on structure, tone, and expected output quality.
 
-*Prompt Example*
+*Example Prompt*
 ```text
 You are an Android developer with expertise in Jetpack Compose and accessibility.
 
@@ -231,3 +243,60 @@ fun AccessibleProfileScreen() {
 
 Now, based on these examples and the requirements above, please generate a complete and functional Composable function for the login screen.
 ```
+
+### Prompt Troubleshooting
+
+Sometimes the model may produce code that doesn’t compile, lacks the required accessibility attributes or introduces hallucinated content. Here are tips to fix that:
+
+- **Rephrase or simplify your prompt**: Break long prompts into smaller parts or clarify requirements.
+- **Be strict with constraints**: Use explicit language like “Do not use custom icons or images.”
+- **Iterate**: Re-run prompts and compare versions. Use feedback from tools like the Accessibility Scanner to refine.
+- **Use hallucination checks**: If results vary too much, prompt the same task multiple times and average the results.
+
+## Using Images in Prompts
+
+LLMs with multimodal capabilities, such as ChatGPT-4 with vision, can interpret and generate code directly from images, such as Figma mockups, screenshots, or UI wireframes as part of your prompt. This allows developers to skip manual description of layout and visual elements, enabling faster transitions from design to accessible UI code.
+
+*Example Prompt (with Image)*
+```text
+You are an expert Android developer working with Jetpack Compose and accessibility.
+
+Please analyze the attached screen design and generate an accessible UI layout in Kotlin using Jetpack Compose and Material3 components.
+
+Accessibility requirements:
+- Provide appropriate contentDescription for all interactive elements (e.g., buttons, icons, images).
+- Use high contrast colors to ensure text readability.
+- Follow recommended minimum touch target sizes (48dp).
+- Ensure that all UI elements are semantically meaningful and compatible with screen readers like TalkBack.
+
+Only use placeholder text and images when necessary. Return a single composable function that builds the layout.
+```
+
+### Tips for Better Multimodal Results
+
+- Use high-resolution, uncluttered screenshots: This helps the model detect layout details accurately.
+- Crop unnecessary parts of the image if not relevant (e.g., system UI).
+- Provide fallback text instructions: e.g., “The screen has a top app bar, a login form, and a footer button.”
+- Clarify what to ignore: Mention if images, icons, or custom fonts should be skipped or replaced with placeholders.
+
+### Limitations of Multimodal Input
+
+While powerful, image input has current limitations:
+
+- LLMs may hallucinate elements not in the design, especially with abstract layouts.
+- They might not detect accessibility violations visually, requiring external validation tools (e.g., Accessibility Scanner).
+- Results are non-deterministic: different generations may vary slightly for the same image.
+
+
+
+
+
+## Validating Accessibility
+
+After generating code with an LLM, always validate the screen using these tools:
+
+- **Google Accessibility Scanner** – Run on a physical device or emulator.
+- **TalkBack or screen reader testing** – Navigate the UI with TalkBack to check labels and interactions.
+- **Color contrast checkers** – Ensure WCAG AA/AAA compliance.
+
+You can also add test tags and use `Modifier.testTag("...")` for automated UI tests.
